@@ -1,5 +1,5 @@
 import View from './View';
-import iconsUrl from '../../img/icons.svg';
+import iconsUrl from 'url:../../img/icons.svg';
 class PaginationView extends View {
   _parentEl = document.querySelector('.pagination');
   _errorMessage = 'No recipes found for your query!';

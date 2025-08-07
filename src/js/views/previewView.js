@@ -1,5 +1,5 @@
 import View from './View';
-import iconsUrl from '../../img/icons.svg';
+import iconsUrl from 'url:../../img/icons.svg';
 
 class PreviewView extends View {
   _parentEl = '';

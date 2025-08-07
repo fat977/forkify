@@ -1,8 +1,8 @@
-import View from "./View";
-import iconsUrl from 'url:../../img/icons.svg';
+import View from './View';
+import iconsUrl from '../../img/icons.svg';
 
 class PreviewView extends View {
-  _parentEl ='';
+  _parentEl = '';
 
   _generateMarkup() {
     const id = window.location.hash.slice(1);
@@ -18,7 +18,9 @@ class PreviewView extends View {
                 <h4 class="preview__title">${this._data.title}</h4>
                 <p class="preview__publisher">${this._data.publisher}</p>
              
-                <div class="preview__user-generated ${this._data.key ? '' :'hidden'}">
+                <div class="preview__user-generated ${
+                  this._data.key ? '' : 'hidden'
+                }">
                   <svg>
                     <use href="${iconsUrl}#icon-user"></use>
                   </svg>
@@ -29,4 +31,4 @@ class PreviewView extends View {
         `;
   }
 }
-export default new PreviewView()
+export default new PreviewView();

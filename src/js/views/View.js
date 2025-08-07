@@ -1,12 +1,12 @@
-import iconsUrl from 'url:../../img/icons.svg';
+import iconsUrl from '../../img/icons.svg';
 export default class View {
   _data;
 
   /**
-   * 
+   *
    * @param {object | object[]} data the data to be rendered (e.g. recipe)
-   * @param {*} render 
-   * @returns 
+   * @param {*} render
+   * @returns
    */
   render(data, render = true) {
     if (!data || (Array.isArray(data) && data.length === 0))
